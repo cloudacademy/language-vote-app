@@ -1,5 +1,3 @@
-# language-vote-app
-
 # CloudAcademy + DevOps
 This is part of the [CloudAcademy](https://cloudacademy.com/library/) Kubernetes/React/Go/MongoDB Learning Path!
 
