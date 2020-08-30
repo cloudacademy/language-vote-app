@@ -1,20 +1,17 @@
 #!/bin/bash
 
 #NOTES:
-# script designed for macos - tested on 10.14.6  
-# script uses and expects the following tools to be available:
-# *yarn v1.17.3
-# *docker 19.03.5
-# *go 1.13.6
+# script tested on macos 10.14.6
+# script tested with the following tools
+# *yarn v1.22.4
+# *docker 19.03.12
+# *go 1.13.8
 # *jq 1.6
 
 command -v yarn >/dev/null 2>&1 || { echo >&2 "yarn command is required by this script - install and then rerun..."; exit 1; }
 command -v docker >/dev/null 2>&1 || { echo >&2 "docker command is required by this script - install and then rerun..."; exit 1; }
 command -v go >/dev/null 2>&1 || { echo >&2 "go command is required by this script - install and then rerun..."; exit 1; }
 command -v jq >/dev/null 2>&1 || { echo >&2 "jq command is required by this script - install and then rerun..."; exit 1; }
-
-echo here!
-exit 1
 
 mkdir ./cloudnativedemo && cd ./cloudnativedemo
 
