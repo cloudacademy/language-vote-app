@@ -38,4 +38,4 @@ http://localhost
 
 The fully dockerised solution will now be presented to you:
 
-![Language Vote Application](/doc/voteapp.png)
+![Language Vote Application](/doc/VoteApp.png)

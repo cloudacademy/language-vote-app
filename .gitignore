@@ -1,1 +1,3 @@
 cloudnativedemo/
+.vagrant
+*.log
