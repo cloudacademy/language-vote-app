@@ -5,7 +5,7 @@ This is part of the [CloudAcademy](https://cloudacademy.com/library/) Kubernetes
 * https://github.com/cloudacademy/voteapp-api-go
 
 # Background
-Provides a an end-to-end build and deployment environment to launch the Language Vote App using Docker containers.
+Provides an end-to-end build and deployment environment to compile and launch the Language Vote App using [Docker](https://www.docker.com/) containers.
 
 # Vagrant
 Make sure that you have [Vagrant](https://www.vagrantup.com/) installed, and then simply run the following command to launch:
