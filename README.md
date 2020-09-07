@@ -7,49 +7,34 @@ This is part of the [CloudAcademy](https://cloudacademy.com/library/) Kubernetes
 # Background
 Provides a an end-to-end build and deployment script to launch the Language Vote App using Docker containers.
 
-# Build Tool Versions
-```
-node -v
-8.16.0
-```
+# Vagrant
+Make sure that you have [Vagrant](https://www.vagrantup.com/) installed, and then simply run the following command to launch:
 
 ```
-yarn -v
-1.17.3
+vagrant up
 ```
 
-```
-go version
-go version go1.13 darwin/amd64
-```
+This will build an Ubuntu 18.04 server complete with all of the required tools needed by the ```install.cn.app.sh``` script automatically installed:
+
+go: ```go version go1.15.1 linux/amd64```
+jq: ```jq-1.5-1-a5b5cbe```
+node: ```v8.10.0```
+yarn: ```1.22.5```
+docker: ```Docker version 19.03.12, build 48a66213fe```
+
+Once you have SSH'd into the server (```vagrant ssh```) you can simply perform the following commands to get the whole solution working:
 
 ```
-docker version
-Client: Docker Engine - Community
- Version:           19.03.2
- API version:       1.40
- Go version:        go1.12.8
- Git commit:        6a30dfc
- Built:             Thu Aug 29 05:26:49 2019
- OS/Arch:           darwin/amd64
- Experimental:      false
-
-Server: Docker Engine - Community
- Engine:
-  Version:          19.03.2
-  API version:      1.40 (minimum version 1.12)
-  Go version:       go1.12.8
-  Git commit:       6a30dfc
-  Built:            Thu Aug 29 05:32:21 2019
-  OS/Arch:          linux/amd64
-  Experimental:     false
- containerd:
-  Version:          v1.2.6
-  GitCommit:        894b81a4b802e4eb2a91d1ce216b8817763c29fb
- runc:
-  Version:          1.0.0-rc8
-  GitCommit:        425e105d5a03fabd737a126ad93d62a9eeede87f
- docker-init:
-  Version:          0.18.0
-  GitCommit:        fec3683
+git clone https://github.com/cloudacademy/language-vote-app.git
+cd language-vote-app
+./install.cn.app.sh
 ```
+
+Finally, jump into your local browser and browse to:
+
+```
+http://localhost
+```
+
+The fully dockerised solution will now be presented to you:
+
