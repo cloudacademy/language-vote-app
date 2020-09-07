@@ -5,7 +5,7 @@ This is part of the [CloudAcademy](https://cloudacademy.com/library/) Kubernetes
 * https://github.com/cloudacademy/voteapp-api-go
 
 # Background
-Provides a an end-to-end build and deployment script to launch the Language Vote App using Docker containers.
+Provides a an end-to-end build and deployment environment to launch the Language Vote App using Docker containers.
 
 # Vagrant
 Make sure that you have [Vagrant](https://www.vagrantup.com/) installed, and then simply run the following command to launch:
@@ -16,11 +16,11 @@ vagrant up
 
 This will build an Ubuntu 18.04 server complete with all of the required tools needed by the ```install.cn.app.sh``` script automatically installed:
 
-go: ```go version go1.15.1 linux/amd64```
-jq: ```jq-1.5-1-a5b5cbe```
-node: ```v8.10.0```
-yarn: ```1.22.5```
-docker: ```Docker version 19.03.12, build 48a66213fe```
+* go: ```go version go1.15.1 linux/amd64```
+* jq: ```jq-1.5-1-a5b5cbe```
+* node: ```v8.10.0```
+* yarn: ```1.22.5```
+* docker: ```Docker version 19.03.12, build 48a66213fe```
 
 Once you have SSH'd into the server (```vagrant ssh```) you can simply perform the following commands to get the whole solution working:
 
