@@ -25,8 +25,7 @@ This will build an Ubuntu 18.04 server complete with all of the required tools n
 Once you have SSH'd into the server (```vagrant ssh```) you can simply perform the following commands to get the whole solution working:
 
 ```
-git clone https://github.com/cloudacademy/language-vote-app.git
-cd language-vote-app
+cd /vagrant
 ./install.cn.app.sh
 ```
 
