@@ -1,5 +1,5 @@
 # CloudAcademy + DevOps
-This is part of the [CloudAcademy](https://cloudacademy.com/library/) Kubernetes/React/Go/MongoDB Learning Path!
+This is part of the [CloudAcademy](https://cloudacademy.com/library/) Docker/React/Go/MongoDB Learning Path!
 
 * https://github.com/cloudacademy/voteapp-frontend-react
 * https://github.com/cloudacademy/voteapp-api-go
