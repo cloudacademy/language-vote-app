@@ -18,9 +18,9 @@ This will build an Ubuntu 18.04 server complete with all of the required tools n
 
 * go: ```go version go1.15.1 linux/amd64```
 * jq: ```jq-1.5-1-a5b5cbe```
-* node: ```v8.10.0```
+* node: ```v14.17.0```
 * yarn: ```1.22.5```
-* docker: ```Docker version 19.03.12, build 48a66213fe```
+* docker: ```Docker version 20.10.6, build 370c289```
 
 Once you have SSH'd into the server (```vagrant ssh```) you can simply perform the following commands to get the whole solution working:
 
