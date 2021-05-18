@@ -26,6 +26,7 @@ Vagrant.configure("2") do |config|
     apt-get install -y jq
 
     echo installing nodejs...
+    curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
     apt-get install -y nodejs
 
     echo installing yarn...
