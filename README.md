@@ -22,11 +22,10 @@ This will build an Ubuntu 18.04 server complete with all of the required tools n
 * yarn: ```1.22.5```
 * docker: ```Docker version 20.10.6, build 370c289```
 
-Once you have SSH'd into the server (```vagrant ssh```) you can simply perform the following commands to get the whole solution working:
+Once the Vagrant box has completed building and is up and running, run the following command to kick off a full installation of the VoteApp 
 
 ```
-cd /vagrant
-./install.cn.app.sh
+vagrant ssh -c "cd /vagrant && ./install.cn.app.sh"
 ```
 
 Finally, jump into your local browser and browse to:
