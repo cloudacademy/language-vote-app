@@ -20,6 +20,7 @@ Vagrant.configure("2") do |config|
     cd /usr/local/
     curl -OLs --output /dev/null https://golang.org/dl/go1.15.1.linux-amd64.tar.gz
     tar -C /usr/local -xzf go1.15.1.linux-amd64.tar.gz
+    cp /usr/local/go/bin/go /usr/bin/
     echo "PATH=$PATH:/usr/local/go/bin" >> /home/vagrant/.bashrc
 
     echo installing jq...
