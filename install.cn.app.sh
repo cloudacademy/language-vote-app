@@ -86,8 +86,5 @@ echo testing api...
 curl -s localhost:8080/ok
 curl -s localhost:8080/languages | jq .
 
-#open chrome - macos only
-if [ "$(uname)" == "Darwin" ]; then
-    echo opening chrome...
-    open -a /Applications/Google\ Chrome.app http://localhost
-fi
+#open chrome automatically - macos only
+if [ "$(uname)" == "Darwin" ]; then open -a "Google Chrome" http://localhost; fi
