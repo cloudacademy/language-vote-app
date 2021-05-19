@@ -88,3 +88,8 @@ curl -s localhost:8080/languages | jq .
 
 #open chrome automatically - macos only
 if [ "$(uname)" == "Darwin" ]; then open -a "Google Chrome" http://localhost; fi
+
+echo
+echo
+echo VoteApp application now up and running...
+echo http://localhost
