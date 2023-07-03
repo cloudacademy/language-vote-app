@@ -14,7 +14,17 @@ command -v go >/dev/null 2>&1 || { echo >&2 "go command is required by this scri
 command -v jq >/dev/null 2>&1 || { echo >&2 "jq command is required by this script - install and then rerun..."; exit 1; }
 command -v git >/dev/null 2>&1 || { echo >&2 "git command is required by this script - install and then rerun..."; exit 1; }
 
-mkdir ./cloudnativedemo && cd ./cloudnativedemo
+#test if local docker daemon is running
+if ! curl -s --unix-socket /var/run/docker.sock http/_ping 2>&1 >/dev/null
+then
+  echo "Please start your local docker daemon and then rerun this script..."
+  exit 1
+fi
+
+WORKING_DIR=./cloudnativedemo
+
+if [ -d "$WORKING_DIR" ]; then rm -Rf $WORKING_DIR; fi
+mkdir $WORKING_DIR && cd $WORKING_DIR
 
 echo cloning...
 git clone https://github.com/cloudacademy/voteapp-frontend-react
